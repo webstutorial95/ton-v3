@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        * {
+            font-family: "Inter", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .menu-section {
+            position: static;
+            z-index: 1;
+            padding-right: 5%;
+            padding-left: 5%;
+            background-color: #fff;
+            box-shadow: 1px 1px 80px 0 rgba(0, 0, 0, 0.07);
+        }
+
+        .ton-navbar {
+
+            display: flex;
+            width: 100%;
+            max-width: 1180px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            background-color: hsla(0, 0%, 86.7%, 0);
+        }
+        
+        .logo {
+            max-width: 80px;
+        }
+
+        .nav-menu {
+            display: flex;
+            margin-left: auto;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            align-items: center;
+            position: relative;
+            float: right
+            }
+
+
+        .nav-link {
+            padding: 15px 1.2vw;
+            -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+            color: rgba(50, 65, 88, 0.7);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+	    color: #324158;
+        }
+
+        .nav-link.w--current {
+            color: #ff2c4f;
+        }   
+
+        .button_menu {
+            margin-left: 12.5px;
+            padding: 12px 25px;
+            border: 1px solid #324158;
+            border-radius: 64px;
+            background-color: #344054;
+            -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+            font-size: 12px;
+            line-height: 100%;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .button_menu:hover {
+            background-color: #fff;
+            color: #344054;
+        }
+
+        .w-button {
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <div class="menu-section">
+        <div class="ton-navbar">
+            <a href="/" class="brand w-nav-brand w--current"><img src="https://tonconsult.com/wp-content/uploads/2019/03/Ton-Logo-strip-06.png" loading="lazy" srcset="https://tonconsult.com/wp-content/uploads/2019/03/Ton-Logo-strip-06.png" alt="" class="logo"/></a>
+            <nav class="nav-menu">
+                <a href="/" aria-current="page" class="link_home_logo_mob w-inline-block w--current"></a>
+                    <a href="/your-opportunity" class="nav-link w-nav-link">Your Opportunity</a>
+                    <a href="/platform" class="nav-link w-nav-link">platform</a>
+                    <a href="/alliances" class="nav-link w-nav-link">Alliances</a>
+                    <a href="/about" class="nav-link w-nav-link">About</a>
+                    <a href="/resources" class="nav-link resources-link w-nav-link">Resources</a>
+                    <a href="/contact-us" class="nav-link w-nav-link">Contact Us</a>
+                    <div class="div-block-34"><a href="/get-started" class="button_menu w-button">Get Started</a></div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
